@@ -1,4 +1,4 @@
-# awseks
+# How to setup AWS EKS cluster and to access cluster through AWS CLI
 
 ### Step 1: Create IAM User for AWS CLI
 
