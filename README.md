@@ -26,7 +26,7 @@
 
 <img src="src/06.png"/>
 
-7. In the user's profile, navigate to the "Security Credentials" tab and click on "Create Access Key."
+7. In the user's profile, navigate to the "Security Credentials" tab, under "Access Keys" section click on "Create Access Key."
  
 <img src="src/07.png"/>
 
