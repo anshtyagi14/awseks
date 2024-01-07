@@ -2,11 +2,11 @@
 
 ### Step 1: Create IAM User for AWS CLI
 
-1. Navigate to and select `IAM` from the main dashboard.
+1. Navigate to and select "IAM" from the main dashboard.
 
 <img src="src/01.png"/>
 
-2. Within `IAM`, locate and click on `Users` in the left navigation pane, then proceed by clicking on "Create User'.
+2. Within "IAM', locate and click on "Users" in the left navigation pane, then proceed by clicking on "Create User'.
 
 <img src="src/02.png"/>
 
@@ -14,7 +14,7 @@
 
 <img src="src/03.png"/>
 
-4. In the permissions section, choose `Attach policies directly`. Search for `AdministratorAccess`, select it, and then click "Next."
+4. In the permissions section, choose "Attach policies directly". Search for `AdministratorAccess`, select it, and then click "Next".
 
 <img src="src/04.png"/>
 
@@ -26,19 +26,19 @@
 
 <img src="src/06.png"/>
 
-7. In the user's profile, navigate to the `Security Credentials` tab, under `Access Keys` section click on "Create Access Key".
+7. In the user's profile, navigate to the "Security Credentials" tab, under "Access Keys" section click on "Create Access Key".
  
 <img src="src/07.png"/>
 
-8. For the use case, select `Command Line Interface (CLI)`, check the confirmation box, and then click "Next."
+8. For the use case, select "Command Line Interface (CLI)", check the confirmation box, and then click "Next".
  
 <img src="src/08.png"/>
 
-9. Skip the option to add a description tag by clicking on "Create Access Key."
+9. Skip the option to add a description tag by clicking on "Create Access Key".
  
 <img src="src/09.png"/>
 
-10. Carefully copy the displayed `Access key` and `Secret access key`, and securely store them for future use.
+10. Carefully copy the displayed "Access key" and "Secret access key", and securely store them for future use.
  
 <img src="src/10.png"/>
 
@@ -48,11 +48,11 @@
 
 ### Step 2: Create IAM Roles for Cluster and Worker Node
 
-1. Access `IAM`, locate and click on `Roles` in the left navigation pane followed by "Create role".
+1. Access "IAM", locate and click on "Roles" in the left navigation pane followed by "Create role".
 
 <img src="src/11.png"/>
 
-2. For the Trusted entity type, select `AWS service`. Under the use case, choose `EKS` and then `EKS - Cluster`. Click "Next" to proceed.
+2. For the Trusted entity type, select "AWS service". Under the use case, choose "EKS" and then "EKS - Cluster". Click "Next" to proceed.
 
 <img src="src/12.png"/>
 
@@ -60,7 +60,7 @@
 
 <img src="src/13.png"/>
 
-4. Enter `EKS-Cluster-Role` as the role name and finalize the process by clicking "Create role."
+4. Enter "EKS-Cluster-Role" as the role name and finalize the process by clicking "Create role".
 
 <img src="src/14.png"/>
 
@@ -68,11 +68,11 @@
 
 <img src="src/15.png"/>
 
-6. Again, select `AWS service` as the Trusted entity type. Under the use case, choose `EC2` and then `EC2` again. Click "Next" to continue. For permissions policies, select `AmazonEC2ContainerReadOnly`, `AmazonEKS_CNI_Policy`, and `AmazonEKSWorkerNodePolicy`.
+6. Again, select "AWS service" as the Trusted entity type. Under the use case, choose "EC2" and then "EC2" again. Click "Next" to continue. For permissions policies, select `AmazonEC2ContainerReadOnly`, `AmazonEKS_CNI_Policy`, and `AmazonEKSWorkerNodePolicy`.
 
 <img src="src/16.png"/>
 
-7. Name this role `EKS-Worker-Node-Role` and complete the creation by clicking on "Create role."
+7. Name this role "EKS-Worker-Node-Role" and complete the creation by clicking on "Create role".
 
 <img src="src/17.png"/>
 
@@ -86,15 +86,15 @@
 
 ### Step 3: Create EKS Cluster
 
-1. Navigate to and select `Elastic Kubernetes Service` from the AWS Management Console.
+1. Navigate to and select "Elastic Kubernetes Service" from the AWS Management Console.
 
 <img src="src/19.png"/>
 
-2. Within Elastic Kubernetes Service, click on `Clusters` in the left sidebar, then select "Add cluster" followed by the "Create" button.
+2. Within Elastic Kubernetes Service, click on "Clusters" in the left sidebar, then select "Add cluster" followed by the "Create" button.
 
 <img src="src/20.png"/>
 
-3. Enter a name for your cluster, choose the desired Kubernetes version, and select the previously created `EKS-Cluster-Role`. Click "Next" to proceed.
+3. Enter a name for your cluster, choose the desired Kubernetes version, and select the previously created "EKS-Cluster-Role". Click "Next" to proceed.
 
 <img src="src/21.png"/>
 
@@ -128,11 +128,11 @@
 
 <img src="src/27.png"/>
 
-2. Go to the `Compute` tab and, in the `Node groups` section, click on "Add node group."
+2. Go to the "Compute" tab and, in the "Node groups" section, click on "Add node group."
 
 <img src="src/28.png"/>
 
-3. Enter a name for the node group, select the previously established `EKS-Worker-Node-Role` for the IAM role, and then click "Next."
+3. Enter a name for the node group, select the previously established "EKS-Worker-Node-Role" for the IAM role, and then click "Next."
 
 <img src="src/29.png"/>
 
@@ -158,23 +158,23 @@
 
 ### Step 5: Cluster access to IAM User
 
-1. Revisit the previously created cluster by clicking on its name. In the `Access` tab, look for the `IAM access entries` section and select "Create access entry."
+1. Revisit the previously created cluster by clicking on its name. In the "Access" tab, look for the "IAM access entries" section and select "Create access entry".
 
 <img src="src/34.png"/>
 
-2. From the "IAM principal" options, choose the IAM User you created earlier, then click "Next."
+2. From the "IAM principal" options, choose the IAM User you created earlier, then click "Next".
 
 <img src="src/35.png"/>
 
-3. In the access policies section, select `AmazonEKSClusterAdminPolicy`. Click "Add policy." Once the policy is listed under added policies, proceed by clicking "Next."
+3. In the access policies section, select `AmazonEKSClusterAdminPolicy`. Click "Add policy". Once the policy is listed under added policies, proceed by clicking "Next."
 
 <img src="src/36.png"/>
 
-4. Carefully review all the changes to ensure they are correct and then click "Create."
+4. Carefully review all the changes to ensure they are correct and then click "Create".
 
 <img src="src/37.png"/>
 
-5. After this process, you can confirm in the `IAM access entries` section that the `AmazonEKSClusterAdminPolicy` is now successfully attached to your IAM User.
+5. After this process, you can confirm in the "IAM access entries" section that the `AmazonEKSClusterAdminPolicy` is now successfully attached to your IAM User.
 
 <img src="src/38.png"/>
 
