@@ -148,22 +148,30 @@
 
 
 -
+### Step 5: Cluster access to IAM User
 
+1. Revisit the previously created cluster by clicking on its name. In the "Access" tab, look for the "IAM access entries" section and select "Create access entry."
 
 <img src="src/34.png"/>
 
-
+2. From the "IAM principal" options, choose the IAM User you created earlier, then click "Next."
 
 <img src="src/35.png"/>
+
+3. In the access policies section, select "AmazonEKSClusterAdminPolicy." Click "Add policy." Once the policy is listed under added policies, proceed by clicking "Next."
+
+<img src="src/36.png"/>
+
+4. Carefully review all the changes to ensure they are correct and then click "Create."
+
+<img src="src/37.png"/>
+
+5. After this process, you can confirm in the "IAM access entries" section that the "AmazonEKSClusterAdminPolicy" is now successfully attached to your IAM User.
+
+<img src="src/38.png"/>
 
 
 
 -
-
-<img src="src/36.png"/>
-
-<img src="src/37.png"/>
-
-<img src="src/38.png"/>
 
 <img src="src/39.png"/>
