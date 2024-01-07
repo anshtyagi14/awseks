@@ -174,4 +174,13 @@
 
 -
 
+### Step 6: Access cluster using AWS CLI and kubectl
+
+1. Verify that both awscli and kubectl are installed on your system.
+2. Execute the command aws configure. When prompted, enter the access key and secret access key you saved earlier during IAM user creation. Also, specify your cluster's region and set the output format to json.
+3. To confirm the identity of your IAM User, run aws sts get-caller-identity.
+4. Update your Kubernetes configuration by running aws eks --region <cluster region> update-kubeconfig --name <cluster name>, replacing <cluster region> and <cluster name> with your specific details.
+5. Check if the correct cluster context is active by running kubectl config get-contexts.
+6. To verify access to your cluster, execute kubectl get svc and review the displayed services.
+
 <img src="src/39.png"/>
