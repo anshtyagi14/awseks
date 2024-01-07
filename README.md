@@ -48,7 +48,7 @@
 
 ### Step 2: Create IAM Roles for Cluster and Worker Node
 
-1. Access `IAM` and from the left sidebar, choose `Roles` followed by "Create role."
+1. Access `IAM`, locate and click on `Roles` in the left navigation pane followed by "Create role".
 
 <img src="src/11.png"/>
 
