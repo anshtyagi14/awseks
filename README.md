@@ -11,7 +11,7 @@
 3. Enter the desired username in the provided field, then click "Next" to continue.
 
 <img src="src/03.png"/>
-4. In the permissions section, choose "Attach policies directly." Search for "AdministrationAccess," select it, and then click "Next."
+4. In the permissions section, choose "Attach policies directly." Search for "AdministratorAccess," select it, and then click "Next."
 
 <img src="src/04.png"/>
 5. Review all the details for accuracy and click on "Create user" to finalize the process.
@@ -26,7 +26,7 @@
 8. For the use case, select "Command Line Interface (CLI)," check the confirmation box, and then click "Next."
  
 <img src="src/08.png"/>
-9. Bypass the option to add a description tag by clicking on "Create Access Key."
+9. Skip the option to add a description tag by clicking on "Create Access Key."
  
 <img src="src/09.png"/>
 10. Carefully copy the displayed "Access Key" and "Secret Access Key," and securely store them for future use.
