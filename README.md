@@ -81,33 +81,54 @@
 
 -
 
+### Step 3: Create EKS Cluster
+
+1. Navigate to and select "Elastic Kubernetes Service" from the AWS Management Console.
+
 <img src="src/19.png"/>
 
-
+2. Within Elastic Kubernetes Service, click on "Clusters" in the left sidebar, then select "Add cluster" followed by the "Create" button.
 
 <img src="src/20.png"/>
 
--
+3. Enter a name for your cluster, choose the desired Kubernetes version, and select the previously created "EKS-Cluster-Role." Click "Next" to proceed.
 
 <img src="src/21.png"/>
 
+4. Select the appropriate VPC, subnets, and security groups for your cluster configuration, then click "Next."
+
 <img src="src/22.png"/>
+
+5. Skip the observability options by clicking "Next," moving to the next configuration step.
 
 <img src="src/23.png"/>
 
+6. Notice that "Kube-proxy," "Amazon VPC CNI," and "CoreDNS" add-ons are pre-selected by default. Click "Next" to continue.
+
 <img src="src/24.png"/>
+
+7. Choose the specific versions for each of the add-ons: "Kube-proxy," "Amazon VPC CNI," and "CoreDNS."
 
 <img src="src/25.png"/>
 
--
+8. Review all configurations to ensure they are correct and click "Create." Wait for the cluster's status to transition from "Creating" to "Active," indicating your cluster is now successfully created.
 
 <img src="src/26.png"/>
 
+-
+
+
 <img src="src/27.png"/>
+
+
 
 <img src="src/28.png"/>
 
+
+
 <img src="src/29.png"/>
+
+
 
 <img src="src/30.png"/>
 
