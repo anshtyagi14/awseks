@@ -66,8 +66,7 @@
 
 <img src="src/15.png"/>
 
-6. Again, select "AWS service" as the Trusted entity type. Under the use case, choose "EC2" and then "EC2" again. Click "Next" to continue.
-- For permissions policies, select "AmazonEc2ContainerReadOnly," "AmazonEKS_CNI_Policy," and "AmazonEKSWorkerNodePolicy."
+6. Again, select "AWS service" as the Trusted entity type. Under the use case, choose "EC2" and then "EC2" again. Click "Next" to continue. For permissions policies, select "AmazonEC2ContainerReadOnly," "AmazonEKS_CNI_Policy," and "AmazonEKSWorkerNodePolicy."
 
 <img src="src/16.png"/>
 
