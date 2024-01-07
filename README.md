@@ -29,6 +29,7 @@
 7. In the user's profile, navigate to the "Security Credentials" tab and click on "Create Access Key."
  
 <img src="src/07.png"/>
+
 8. For the use case, select "Command Line Interface (CLI)," check the confirmation box, and then click "Next."
  
 <img src="src/08.png"/>
