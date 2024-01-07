@@ -142,7 +142,7 @@
 
 <img src="src/32.png"/>
 
-7. Wait for the node group's status to change to "Active" and for the nodes' status to indicate they are ready for use.
+7. Wait for the node group's status to change to "Active" and for the nodes status to "Ready" indicating they are ready for use.
 
 <img src="src/33.png"/>
 
