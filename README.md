@@ -116,33 +116,47 @@
 <img src="src/26.png"/>
 
 -
+### Step 4: Create Worker Node
 
+1. Click on the name of the cluster you have previously created.
 
 <img src="src/27.png"/>
 
-
+2. Go to the "Compute" tab and, in the "Node groups" section, click on "Add node group."
 
 <img src="src/28.png"/>
 
-
+3. Enter a name for the node group, select the previously established "EKS-Worker-Node-Role" for the IAM role, and then click "Next."
 
 <img src="src/29.png"/>
 
-
+4. Choose the appropriate AMI type, Instance type, and Disk size. In the "Node group scaling configuration," set the desired, minimum, and maximum sizes of the node group, then click "Next."
 
 <img src="src/30.png"/>
 
--
+5. Select the subnets for the node group. The subnets chosen during the cluster creation will be automatically selected by default. Click "Next" to proceed.
 
 <img src="src/31.png"/>
 
+6. Review all your configurations for accuracy and then click "Create" to initiate the creation of the worker node.
+
 <img src="src/32.png"/>
+
+7. Wait for the node group's status to change to "Active" and for the nodes' status to indicate they are ready for use.
 
 <img src="src/33.png"/>
 
+
+-
+
+
 <img src="src/34.png"/>
 
+
+
 <img src="src/35.png"/>
+
+
 
 -
 
